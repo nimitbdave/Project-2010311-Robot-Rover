@@ -1,6 +1,7 @@
 # Import the "numpy" package for working with arrays
 import numpy as np
 print(image.dtype, image.shape, np.min(image), np.max(image))
+
 # uint8 (160, 320, 3) 0 255
 
 """
