@@ -10,6 +10,7 @@ image = mpimg.imread(image_name)
 
 # Define a function to perform a color threshold
 def color_thresh(img, rgb_thresh=(0, 0, 0)):
+    """
     ###### TODO:
     # Create an empty array the same size in x and y as the image 
     # but just a single channel
@@ -18,7 +19,8 @@ def color_thresh(img, rgb_thresh=(0, 0, 0)):
     # where threshold was exceeded
     # Return the single-channel binary image
     return color_select
-
+    """
+    
     # Create an empty array the same size in x and y as the image 
     # but just a single channel
         # Create an array of zeros same xy size as img, but single channel
@@ -37,10 +39,13 @@ def color_thresh(img, rgb_thresh=(0, 0, 0)):
     # where threshold was exceeded
     # Return the single-channel binary image
         # Index the array of zeros with the boolean array and set to 1.
-    color_select[above_thresh] = 1   #The color_select array takes in the input of the boolean array above_thresh. is indexed to 1, wherever
+    color_select[above_thresh] = 1   # The array of zeros (color_select) takes in the input of the boolean array (above_thresh).
+                                     # The zeros are indexed to 1, wherever color_select's array set members return TRUE in above_thresh.  
         # Return the binary image
     return color_select 
-    
+
+
+
 # Define color selection criteria
 ###### TODO: MODIFY THESE VARIABLES TO MAKE YOUR COLOR SELECTION
 red_threshold = 0
